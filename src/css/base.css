@@ -1,0 +1,20 @@
+.d-flex {
+    display: flex;
+
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.aic {
+    align-items: center;
+}
+
+.fdr-r {
+    flex-direction: row;
+}
+
+.fdr-c {
+    flex-direction: column;
+}
