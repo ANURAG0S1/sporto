@@ -1,0 +1,58 @@
+.select-sport-screen {
+    padding: 10px 24px;
+}
+
+.search-sport-input-box {
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    height: 40px;
+    margin-top: 12px;
+}
+
+
+.search-sport-input-box input {
+    width: -webkit-fill-available;
+    background: #f4f4f4;
+
+}
+
+.sports-container {
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sports-container .sport {
+    width: 90px;
+    min-width: 80px;
+    padding: 10px 16px;
+    border: 1px solid #f4f4f4;
+    border-radius: 8px;
+    max-width: 120px;
+    flex-grow: 1;
+
+}
+
+.sports-container .sport.selected {
+    border: 1px solid #FF4B00
+}
+
+
+.sports-container .sport .sport-name {
+    font-size: 12px;
+    line-height: 18px;
+    color: #323232;
+}
+
+.proceed-button {
+    background-color: #FF4B00;
+    color: white;
+    height: 48px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}

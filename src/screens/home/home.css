@@ -1,0 +1,22 @@
+.home-screen {
+    padding: 0px 20px;
+}
+
+.profile-bar {
+    padding: 8px 0px;
+}
+
+
+.select-location img {
+    height: 20px;
+    margin-right: 4px;
+}
+
+
+.feature-list {
+    flex-wrap: wrap;
+}
+
+.feature .text {
+    font-size: 12px;
+}

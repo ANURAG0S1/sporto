@@ -1,0 +1,29 @@
+.selected-sports-strip {
+    height: 30px;
+    padding: 1px 0px;
+    display: flex;
+    overflow-x: scroll;
+
+    margin-top: 8px;
+}
+
+.sport-category {
+    color: #969696;
+    width: max-content;
+    padding: 0px 10px;
+    border-radius: 4px;
+    min-width: 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    max-width: 200px;
+    /* flex-grow: 0; */
+    flex-shrink: 0;
+}
+
+.sport-category.selected {
+    color: white;
+    background-color: #FF4B00;
+
+}

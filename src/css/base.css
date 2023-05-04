@@ -7,6 +7,11 @@
     justify-content: center;
 }
 
+.jc-sb {
+    justify-content: space-between;
+}
+
+
 .aic {
     align-items: center;
 }

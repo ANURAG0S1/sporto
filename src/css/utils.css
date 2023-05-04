@@ -12,7 +12,7 @@
     padding: 0px;
     margin: 0px;
     scroll-behavior: smooth;
-    overflow: hidden;
+
 }
 
 input {
@@ -22,6 +22,10 @@ input {
 textarea:focus,
 input:focus {
     outline: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -186,6 +190,9 @@ input:focus {
     margin-left: 8px;
 }
 
+.m-t-12 {
+    margin-top: 16px;
+}
 
 .m-16 {
     margin: 16px;
