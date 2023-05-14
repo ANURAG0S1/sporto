@@ -1,0 +1,50 @@
+[
+  {
+    "academy_name": "WDCA cricket Academy",
+    "date": "28 april,2023 08:00 AM",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.redbull.com%2Fin-en%2Fthe-modern-school-cricket-factory&psig=AOvVaw2STkHbJ_OilpfpqGUOQ3fg&ust=1683972259468000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDM3NTD7_4CFQAAAAAdAAAAABAE",
+    "venue": "NSG Ground, Delhi",
+    "booking_price": 2100,
+    "id": "1",
+    "desc": "WDCA cricket academy is delhi’s one of the most oldest and respected academy producing talents like virat kohli,we have Four turfs and 3 cement wickets Two bowling machines Video analysis sessions No hostel facilities, for students coming from a far place",
+    "acad_schedule": {
+      "days": "M:W:F",
+      "timings": "3-6 PM"
+    },
+    "contact": [98434344433, 9832345321],
+    "fees": {
+      "yearly": 20000,
+      "half-yearly": 9000,
+      "monthly": 2000
+    }
+  },
+  {
+    "academy_name": "FCB Football Academy",
+    "date": "22 april,2023 12:00 PM",
+    "venue": "DAV School Ground, Delhi",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.academyfootball.info%2Ffootball-academies&psig=AOvVaw2miff-u8pss-rQgYO0Xv5O&ust=1683972202791000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNjQxrnD7_4CFQAAAAAdAAAAABAE",
+    "booking_price": 0,
+    "id": "2",
+    "acad_schedule": {
+      "days": "M:W:F",
+      "timings": "4-6 AM"
+    },
+    "contact": [9843434432, 9887645321]
+  },
+
+  {
+    "academy_name": "Kabaddi classes",
+    "date": "21 april,2023 05:00 PM",
+    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fyourstory.com%2Fthe-decrypting-story%2Fblockchain-platform-kabaddi-fan-engagement-sports-web3&psig=AOvVaw0vH_uHsMhRgInuUATt4ElL&ust=1683971346098000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICGhqLA7_4CFQAAAAAdAAAAABAJ",
+    "venue": "Govt School Ground, Delhi",
+    "booking_price": 1200,
+    "id": "5",
+    "desc": "",
+    "contact": [9849344433, 9864363622],
+    "fees": {
+      "yearly": 18000,
+      "quarterly": 5000,
+      "monthly": 2000
+    }
+  }
+]

@@ -1,5 +1,6 @@
 import "./home.css";
 import SelectedSportStrip from "./components/selectedSportsStrip/selectedSportsStrip.jsx";
+// import { Toast } from "react-toastify/dist/components";
 const userIcon = require("../../assets/icons/userIcon.png");
 const locationIcon = require("../../assets/icons/location.png");
 const academyBg = require("../../assets/images/academy.png");
@@ -10,6 +11,7 @@ export function Home() {
   return (
     <>
       <div className="home-screen">
+        {/* <Toast></Toast> */}
         <div className="profile-bar d-flex jc-sb aic">
           <div className="select-location d-flex aic ">
             <img src={locationIcon} alt="" />
@@ -49,7 +51,7 @@ export function Home() {
         </div>
 
         {/* Live matches  */}
-        <div className="offerings m-t-16 f-w-600"> Live Matches</div>
+        <div className="live-matches m-t-16 f-w-600"> Live Matches</div>
 
         {/* Trending  */}
         <div className="offerings m-t-16 f-w-600"> Trending</div>

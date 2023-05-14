@@ -1,0 +1,37 @@
+{
+  "rss": {
+    "channel": {
+      "title": "Latest Chess News, Chess Info, Sports News Updates - NDTVSports.com",
+      "link": "http://sports.ndtv.com/",
+      "description": "Latest Chess news, info, breaking news updates from around the cricketing world. From long on to long off, drives, hooks, pulls, cuts, yorkers and doosra, Sports.NDTV.com is an all-rounder in World Chess coverage. View best photos and videos.",
+      "item": [
+        {
+          "guid": {
+            "_isPermaLink": "false",
+            "__text": "3057619"
+          },
+          "link": "https://sports.ndtv.com/chess/norway-chess-viswanathan-anand-beats-aryan-tari-in-final-round-finishes-third-3057619#rss-sports-chess",
+          "title": "Norway Chess: Viswanathan Anand Beats Aryan Tari In Final Round, Finishes Third",
+          "description": "Former world champion Viswanathan Anand scored a win over Aryan Tari in the ninth and final round to finish third in the Norway Chess tournament which was won by world number one Magnus Carlsen",
+          "updated": {
+            "__text": "2022-06-11T11:23:40+05:30"
+          }
+        },
+        {
+          "guid": {
+            "_isPermaLink": "false",
+            "__text": "3054647"
+          },
+          "link": "https://sports.ndtv.com/chess/norway-chess-viswanathan-anand-loses-to-shakhriyar-mamedyarov-as-magnus-carlsen-surges-ahead-3054647#rss-sports-chess",
+          "title": "Norway Chess: Viswanathan Anand Loses To Shakhriyar Mamedyarov As Magnus Carlsen Surges Ahead",
+          "description": "Viswanathan Anand, who was in second spot behind world No.1 Carlsen after seven rounds, slipped to third with 13 points at the conclusion of the eighth and penultimate round",
+          "updated": {
+            "__text": "2022-06-10T10:43:13+05:30"
+          }
+        }
+      ]
+    },
+    "_xmlns:a10": "http://www.w3.org/2005/Atom",
+    "_version": "2.0"
+  }
+}
