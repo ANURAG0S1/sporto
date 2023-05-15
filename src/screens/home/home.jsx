@@ -1,5 +1,9 @@
 import "./home.css";
+import React from "react";
+
 import SelectedSportStrip from "./components/selectedSportsStrip/selectedSportsStrip.jsx";
+import LiveScore from "../live-score/live-score";
+import Feed from "../trending/feed";
 // import { Toast } from "react-toastify/dist/components";
 const userIcon = require("../../assets/icons/userIcon.png");
 const locationIcon = require("../../assets/icons/location.png");
@@ -8,6 +12,7 @@ const meetupBg = require("../../assets/images/meetup.png");
 const newandScoreBg = require("../../assets/images/match.png");
 const events = require("../../assets/images/event.png");
 export function Home() {
+  let currentSport = "cricket";
   return (
     <>
       <div className="home-screen">
@@ -51,10 +56,10 @@ export function Home() {
         </div>
 
         {/* Live matches  */}
-        <div className="live-matches m-t-16 f-w-600"> Live Matches</div>
+        <LiveScore currentSport={currentSport}></LiveScore>
 
         {/* Trending  */}
-        <div className="offerings m-t-16 f-w-600"> Trending</div>
+        <Feed currentSport={currentSport}></Feed>
       </div>
     </>
   );

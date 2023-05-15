@@ -1,3 +1,4 @@
+import React from "react";
 import "./auth.css";
 
 const fbIcon = require("./../../assets/icons/fb.png");

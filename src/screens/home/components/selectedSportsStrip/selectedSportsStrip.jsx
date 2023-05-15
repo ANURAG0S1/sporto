@@ -1,4 +1,5 @@
 import "./selectedSportsStrip.css";
+import React from "react";
 
 export default function selectedSportStrip() {
   return (

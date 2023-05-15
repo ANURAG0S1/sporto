@@ -1,11 +1,10 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import React from "react";
 import { Home } from "./screens/home/home";
 
 import { Auth } from "./screens/auth/auth";
 import { Splash } from "./screens/onboarding/splash/splash";
-import { SelectSport } from "./screens/onboarding/selectSport/selectSport";
 
 function App() {
   return (

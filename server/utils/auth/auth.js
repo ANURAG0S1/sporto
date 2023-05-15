@@ -1,32 +1,58 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 
-const users = [
-  {
-    id: 1,
-    email: "user@example.com",
-    password: "$2b$10$3v2Za71jafyzfrtIvkRdL.XvKjJ82a1pyRudnJweaLH07aq/x2XgK", // hashed password
-  },
-];
+mongoose.connect(process.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-const secretKey = "mysecretkey";
+const userSchema = new mongoose.Schema({
+  email: { type: String, required: true },
+  password: { type: String, required: true },
+});
+
+const User = mongoose.model("User", userSchema);
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
-  const user = users.find((user) => user.email === email);
-  if (!user) {
-    return res.status(401).json({ message: "Invalid credentials" });
-  }
-  bcrypt.compare(password, user.password, (err, result) => {
-    if (err || !result) {
+  User.findOne({ email }, (err, user) => {
+    if (err || !user) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
-    const token = jwt.sign({ userId: user.id }, secretKey, { expiresIn: "1h" });
-    res.json({ token });
+    bcrypt.compare(password, user.password, (err, result) => {
+      if (err || !result) {
+        return res.status(401).json({ message: "Invalid credentials" });
+      }
+      const token = jwt.sign({ userId: user._id }, process.env.SECRET, {
+        expiresIn: "1h",
+      });
+      res.json({ token });
+    });
+  });
+});
+
+app.post("/signup", (req, res) => {
+  const { email, password } = req.body;
+  bcrypt.hash(password, 10, (err, hashedPassword) => {
+    if (err) {
+      return res.status(500).json({ message: "Server error" });
+    }
+    const user = new User({ email, password: hashedPassword });
+    user.save((err, savedUser) => {
+      if (err) {
+        return res.status(400).json({ message: "Validation error" });
+      }
+      const token = jwt.sign({ userId: savedUser._id }, process.env.SECRET, {
+        expiresIn: "1h",
+      });
+      res.json({ token });
+    });
   });
 });
 
@@ -39,7 +65,7 @@ function verifyToken(req, res, next) {
   if (!token) {
     return res.status(401).json({ message: "Token not provided" });
   }
-  jwt.verify(token, secretKey, (err, decoded) => {
+  jwt.verify(token, process.env.SECRET, (err, decoded) => {
     if (err) {
       return res.status(401).json({ message: "Invalid token" });
     }
