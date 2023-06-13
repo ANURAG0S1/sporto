@@ -28,7 +28,7 @@ export default function Feed({ currentSport }) {
         return (
           <div className="feeditem" key={feedItem.guid}>
             <span>{feedItem.title}</span>
-            <span>{getogImageUrl(feedItem.url)}</span>
+            {/* <span>{getogImageUrl(feedItem.url)}</span> */}
           </div>
         );
       })}

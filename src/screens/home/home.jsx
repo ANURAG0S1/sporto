@@ -1,5 +1,5 @@
 import "./home.css";
-import React from "react";
+import React,{useState} from "react";
 
 import SelectedSportStrip from "./components/selectedSportsStrip/selectedSportsStrip.jsx";
 import LiveScore from "../live-score/live-score";
@@ -11,8 +11,14 @@ const academyBg = require("../../assets/images/academy.png");
 const meetupBg = require("../../assets/images/meetup.png");
 const newandScoreBg = require("../../assets/images/match.png");
 const events = require("../../assets/images/event.png");
+
 export function Home() {
-  let currentSport = "cricket";
+  
+  const [currentSport, setcurrentSport] = useState('cricket')
+
+function changeSport(value){
+setcurrentSport(value)
+}
   return (
     <>
       <div className="home-screen">
@@ -26,7 +32,7 @@ export function Home() {
             <img src={userIcon} alt="" />
           </div>
         </div>
-        <SelectedSportStrip></SelectedSportStrip>
+        {/* <SelectedSportStrip currentSport={{currentSport}} changeSport={{changeSport}}></SelectedSportStrip> */}
         <div className="offerings m-t-16 f-w-600"> Our Offerings</div>
         <div className="feature-list m-t-12 d-flex">
           <div className="feature w-50 d-flex aic fdr-c">

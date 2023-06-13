@@ -465,8 +465,13 @@ require("dotenv").config({ path: require("find-config")(".env") });
 const route = express.Router();
 
 route.get("/:sport", async (req, res) => {
+
   if (req.params.sport === "cricket") {
-    res.send(cricData);
+    let dat = await axios.get(urls.cricket);
+    console.log(dat)
+    res.send(cricData).end();
+  }else{
+    res.send('lol')
   }
 });
 
