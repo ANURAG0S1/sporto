@@ -1,0 +1,33 @@
+.toastr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222222;
+  color: white;
+  width: 80vw;
+  margin: auto;
+  height: auto;
+  margin-bottom: 70px;
+  border-radius: 4px;
+
+  .toastr {
+    display: flex;
+    padding: 12px 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    z-index: 6;
+    bottom: 80px;
+    width: 80vw;
+    left: 40px;
+    border-radius: 8px;
+    
+  }
+}
+
+.toast-bottom-full-width {
+  bottom: 0;
+  right: 0;
+}

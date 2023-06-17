@@ -1,0 +1,54 @@
+@import "../_styles/themes.scss";
+@import "../_styles/color.utilities.scss";
+
+// TODO - HIGH : resolve material themeing
+
+
+// @import "@angular/material/theming";
+// /* All ready-to-use Theme Classes */
+// @import "../_styles/custom-components.styles.scss";
+// @use "@angular/material" as mat;
+ 
+
+
+// @include mat.core();
+
+
+// .orange_theme {
+//     @import "./orange/orange.theme.scss";
+  
+//     $app-primary: mat.define-palette($primary);
+//     $app-accent: mat.define-palette($accent);
+ 
+//     $app-theme: mat.define-light-theme(
+//       (
+//         color: (
+//           primary: $app-primary,
+//           accent: $app-accent,
+//         ),
+ 
+//       )
+//     );
+  
+ 
+//     @include custom-components-style($app-theme);
+//   }
+
+// @use '~@angular/material' as mat;
+
+// @import '~@angular/material/theming';
+// @include mat.core();
+
+// $app-primary: mat.define-palette(mat.$indigo-palette);
+// $app-accent: mat.define-palette(mat.$indigo-palette);
+
+// $app-warn: mat.define-palette(mat.$red-palette, 900);
+
+// $app-theme: mat.define-light-theme($app-primary, $app-accent, $app-warn);
+
+// @include mat.all-component-themes($app-theme);
+
+// $sansserif-typography: mat.define-typography-config(
+//   $font-family: sans-serif
+// );
+// @include mat.all-component-typographies($sansserif-typography);

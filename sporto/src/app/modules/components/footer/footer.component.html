@@ -1,1 +1,32 @@
-<p>footer works!</p>
+<div class="footer shadow-u p-16">
+    <ul class="ul" style="display: flex;
+    justify-content: space-around;">
+
+        <li>
+            <div class="col" [ngClass]="activeItem=='home' ? 'active color-primary-1' : ''">
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </div>
+        </li>
+        <li>
+            <div class="col" [ngClass]="activeItem=='events' ? 'active color-primary-1' : ''">
+                <mat-icon>event_available
+                </mat-icon>
+                <span>Events</span>
+            </div>
+        </li>
+        <li>
+            <div class="col" [ngClass]="activeItem=='feed' ? 'active color-primary-1' : ''">
+                <mat-icon>feed</mat-icon>
+                <span>News</span>
+            </div>
+        </li>
+        <li>
+            <div class="col" [ngClass]="activeItem=='academy' ? 'active color-primary-1' : ''">
+                <mat-icon>location_on</mat-icon>
+                <span>Academy</span>
+            </div>
+        </li>
+
+    </ul>
+</div>

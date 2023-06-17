@@ -1,0 +1,66 @@
+/* White Orange Theme Palette */
+
+$primary: (
+  // white
+  50: #ffffff,
+  // base
+  100: #f9faff,
+  // card
+  200: #ffffff,
+  300: #ffe9d9,
+  400: #fa883f,
+  500: #ff8126,
+  700: #ff8126,
+  A400: #bee0ff,
+  A500: #036dcc,
+  // custom
+  info: #2f80ed,
+  success: #27ae60,
+  success-light: #f7fff2,
+  warning: #e2b93b,
+  warning-light: #fffdf0,
+  error: #e63a38,
+  error-light: #fff5f5,
+  gray-1: #323232,
+  gray-2: #646464,
+  gray-3: #969696,
+  gray-4: #d8d8d8,
+  gray-5: #f4f4f4,
+  dark-base: #000000,
+  dark-card: #171d21,
+  contrast: (
+    50: #323232,
+    100: #323232,
+    200: #323232,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #323232,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  )
+);
+
+$accent: (
+  100: #ffffff,
+  200: #ffe9d9,
+  400: #fa883f,
+  500: #ff8126,
+  700: #ff8126,
+  A400: #bee0ff,
+  A500: #036dcc,
+  contrast: (
+    100: #323232,
+    200: #323232,
+    400: #ffffff,
+    500: #ffffff,
+    700: #ffffff,
+    A400: #323232,
+    A500: #ffffff,
+  ),
+);

@@ -10,10 +10,17 @@ const routes: Routes = [
       ),
   },
   {
-    path: '',
+    path: 'profile',
     loadChildren: () =>
-      import('./modules/home/home.module').then(
-        (m) => m.HomeModule
+      import('./modules/profile/profile.module').then(
+        (m) => m.ProfileModule
+      ),
+  },
+  {
+    path: 'static',
+    loadChildren: () =>
+      import('./modules/static/static.module').then(
+        (m) => m.StaticModule
       ),
   },
   {

@@ -1,0 +1,6 @@
+@import '../modules/components/footer/footer.component.scss';
+
+@mixin custom-components-style($theme) {
+    @include footer-component($theme);
+  }
+  
