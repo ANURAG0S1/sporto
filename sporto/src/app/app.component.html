@@ -1,0 +1,32 @@
+<!-- Theme Change Button div -->
+<div id="app_theme" [ngClass]="currentTheme" class="w-100">
+  <!-- Root Container -->
+  <div class="root-container d-flex w-100">
+    <!-- Loader -->
+    <div *ngIf="loading" class="spinner d-flex-col-cen">
+      <div>
+        <!-- <mat-spinner color="accent" diameter="50"></mat-spinner> -->
+      </div>
+      <div>Please Wait...</div>
+    </div>
+
+  
+    <!-- Root Mobile -->
+    <div
+      id="app-root-mobile"
+      class="root-mobile w-100 d-flex-col"
+
+    >
+      <!-- Header -->
+      <app-header></app-header>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <router-outlet></router-outlet>
+      </div>
+
+      <!-- Footer -->
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>
