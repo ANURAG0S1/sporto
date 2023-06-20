@@ -2,15 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
-import { ToastrModule, ToastrService } from 'ngx-toastr';
-
+import { ToastrModule } from 'ngx-toastr';
+import { MainComponent } from '../components/news/main.component';
 
 
 @NgModule({
-  declarations: [HomeComponent],
-  imports: [
-    CommonModule,HomeRoutingModule,
-    ToastrModule
-  ]
+  declarations: [HomeComponent,MainComponent],
+  imports: [ CommonModule, HomeRoutingModule, ToastrModule],
 })
-export class HomeModule { }
+export class HomeModule {}

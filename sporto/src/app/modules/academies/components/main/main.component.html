@@ -1,0 +1,26 @@
+<div class="academies-container ">
+
+    <div class="academy p-16  bg-gray m-16" *ngFor="let academy of acadData">
+        <div class="info m-b-8">
+            <div class="d-flex">
+                <div class="img"> <img [src]="academy.imgUrl" [alt]="academy.name"></div>
+                <div class="details ">
+                    <div class="name"> {{academy.name}}</div>
+                    <div class="asdress f-12"> {{academy.details.destination.name}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="d-flex">
+                <a  class="button w-50 "href="tel:{{academy.details.contact}}">
+                    <div >
+                        Call Now
+                    </div>
+                </a>
+                <div class="button w-50" (click)="openAcademyDetails(academy.id)">Explore</div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

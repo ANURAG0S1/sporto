@@ -1,0 +1,105 @@
+.login-page{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 4;
+    top: 0px;
+    
+    .mobile-login {
+        padding: 40px 24px;
+    }
+    
+    .logo{
+        height: 10vh;
+    margin-top: 8vh;
+        width: 100%;
+    display: flex;align-items: center;justify-content: center;
+    }
+    
+    .input-box {
+        height: 54px;
+        background-color: #F4F4F4;
+        margin-top: 36px;
+        margin-bottom: 30px;
+    }
+    
+    .country-code-input {
+        padding: 16px;
+    }
+    
+    #username,#password {
+        background: #f4f4f4;
+        border: 0px;
+        padding: 0px 20px;
+    
+    }
+    
+    .otp-option div {
+        height: 54px;
+    }
+    
+    .skip-now {
+        position: absolute;
+        bottom: 40px;
+        right: 24px;
+        width: 90vw;
+        font-size: 12px;
+        .login{
+            a{
+                color:#ff4b00
+            }
+        }
+    }
+    
+    .social-login .divider {
+        position: absolute;
+    }
+    
+    .social-login .border-line {
+        border-bottom: 1px solid #f4f4f4;
+        position: absolute;
+    
+    }
+    
+    .social-login .divider .divider-text {
+        position: relative;
+        text-align: center;
+        background-color: white;
+        z-index: 2;
+        padding: 0px 10px;
+    }
+    
+    .social-login .social-login-methods {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        margin: 40px 50px;
+        margin-top: 50px;
+    }
+    
+    .social-login .social-login-methods div.Facebook,
+    .social-login .social-login-methods div.Google,
+    .social-login .social-login-methods div.mail {
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    
+    .social-login .social-login-methods div .icon-wrapper {
+        height: 54px;
+        width: 54px;
+        padding: 14px;
+        box-shadow: 0px 0px 8px rgba(22, 22, 22, 0.15);
+        border-radius: 50%;
+    }
+    
+    .icon-text {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 6px;
+    }}

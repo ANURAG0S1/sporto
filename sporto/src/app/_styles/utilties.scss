@@ -7,6 +7,7 @@
     margin: 0px;
     scroll-behavior: smooth;
 
+text-decoration: none;    ;
 }
 
 input {
@@ -646,4 +647,16 @@ input:focus {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+.divider{
+    background: #80808017;
+    height: 6px;
+    width: 100%;
+    display: block;
+}
+
+.header-spacer{
+    height: 70px;
+    width: 100%;
 }

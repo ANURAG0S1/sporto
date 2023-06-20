@@ -1,12 +1,11 @@
- 
-
 .footer {
-    padding: 8px 12px !important;
-    position: absolute;
-    z-index: 3;
-    bottom: 0px;
-    width: 100%;
-    left: 0px;
+  padding: 8px 12px !important;
+  position: fixed;
+  z-index: 3;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  border-radius: 20px 20px 0px 0px;
   ul {
     display: flex;
     justify-content: space-around;

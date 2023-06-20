@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+import { FooterService } from 'src/app/_shared/providers/footer/footer.service';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,16 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class HomeComponent implements OnInit {
   loading: boolean = false;
-  constructor(private activatedRoute: ActivatedRoute,private toastr: ToastrService, ) {}
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private toastr: ToastrService,
+    private router: Router,
+    private footerService: FooterService
+  ) {}
 
   ngOnInit(): void {
     this.subscribeEvents();
+    this.footerService.activeTab = 'home';
   }
 
   subscribeEvents() {
@@ -20,14 +27,18 @@ export class HomeComponent implements OnInit {
       this.loading = true;
       if (queryParams) {
         if (queryParams['login']) {
-          if (queryParams['login'] == true ||  queryParams['login'] == 'true') {
-       this.toastr.success('Login Successfull')
-          } else if(  queryParams['login'] == 'skip') {
+          if (queryParams['login'] == true || queryParams['login'] == 'true') {
+            this.toastr.success('Login Successfull');
+          } else if (queryParams['login'] == 'skip') {
             console.log('Login Skipped');
-            this.toastr.success('Login Skipped')
+            this.toastr.success('Login Skipped');
           }
         }
       }
     });
+  }
+
+  navigate(route: string) {
+    this.router.navigate([route]);
   }
 }

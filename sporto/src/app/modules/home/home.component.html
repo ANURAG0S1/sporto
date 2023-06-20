@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="home ">
+    <h4 class=" p-16">Our Offerings</h4>
+    <div class="d-flex offerings p-hr-16 p-b-16 p-t-4">
+        <div (click)="navigate('academies')">
+            <img src="./../../../assets/images/academy.png" alt="">
+            <span>academy</span>
+        </div>
+        <div (click)="navigate('events')">
+            <img src="./../../../assets/images/event.png" alt="">
+            <span>Events</span>
+        </div>
+        <div (click)="navigate('new')">
+            <img src="./../../../assets/images/meetup.png" alt="">
+            <span>Meetup</span>
+        </div>
+        <div (click)="navigate('news')">
+            <img src="./../../../assets/images/match.png" alt="">
+            <span>News & Score</span>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <h4 class="p-16">Live Matches</h4>
+    <div class="scores p-16">
+        <app-main-news></app-main-news>
+    </div>
+</div>

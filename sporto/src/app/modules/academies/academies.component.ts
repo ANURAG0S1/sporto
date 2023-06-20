@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterService } from 'src/app/_shared/providers/footer/footer.service';
 
 @Component({
   selector: 'app-academies',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AcademiesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private footerService :FooterService) { }
 
   ngOnInit(): void {
+    this.footerService.activeTab = 'academies';
   }
 
 }

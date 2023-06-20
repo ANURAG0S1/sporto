@@ -1,1 +1,35 @@
-<p>score-cards works!</p>
+<div class="matches">
+    'liveData.map((match) => '
+      return (
+        <div
+          key='match.id'
+          class="d-flex match"
+
+        >
+          <div class="team d-flex-jc-sb">
+            <div class="left d-flex">
+              <img src='match.teamInfo[0].img' alt="" height="24" />
+              <span class="name">'match.teamInfo[0].shortname'</span>
+            </div>
+            <div class="right">
+              'match.score[0].r'/'match.score[0].w'
+              <span class="over">('match.score[0].o')</span>
+            </div>
+          </div>
+          <div class="team d-flex-jc-sb">
+            <div class="left">
+              <img src='match.teamInfo[1].img' alt="" height="24" />
+              <span class="name">'match.teamInfo[1].shortname'</span>
+            </div>
+            <div class="right">
+              'match.score[1].r'/'match.score[1].w'
+              <span class="over">('match.score[1].o')</span>
+            </div>
+          </div>
+          <div class="status">
+            <p>'match.status'</p>
+          </div>
+        </div>
+      );
+    ')'
+  </div>

@@ -10,21 +10,17 @@
       <div>Please Wait...</div>
     </div>
 
-  
-    <!-- Root Mobile -->
-    <div
-      id="app-root-mobile"
-      class="root-mobile w-100 d-flex-col"
 
-    >
+    <!-- Root Mobile -->
+    <div id="app-root-mobile" class="root-mobile w-100 d-flex-col">
       <!-- Header -->
       <app-header></app-header>
-
+      <div class="header-spacer"></div>
       <!-- Main Content -->
       <div class="main-content">
         <router-outlet></router-outlet>
       </div>
-
+      <div class="header-spacer"></div>
       <!-- Footer -->
       <app-footer></app-footer>
     </div>

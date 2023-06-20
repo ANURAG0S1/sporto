@@ -1,0 +1,33 @@
+.event-container {
+    .event {
+      height: auto;
+      border-radius: 20px;
+      .info {
+        .img {
+          margin-right: 20px;
+          margin-left: 10px;
+          img {
+            height: auto;
+            width: 65px;
+          }
+        }
+      }
+      .buttons {
+        div.d-flex {
+          .button {
+            width: 100%;
+            background: #ff4b00;
+            color: white;
+            height: 40px;
+            padding: 8px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,19 @@
+<div class="event-container">
+    <div class="event p-16  bg-gray m-16" *ngFor="let event of eventsData">
+        <div class="info m-b-8">
+            <div class="d-flex">
+                <div class="img"> <img [src]="event.imgUrl" alt=""></div>
+                <div class="details ">
+                    <div class="name">{{event.name}}</div>
+                    <div class="asdress f-12">Date : {{event.date}}</div>
+                    <div class="asdress f-12">Venue : {{event.venue}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="d-flex">
+                <div class="button w-50" (click)="openEventDetails(event.id)">Explore</div>
+            </div>
+        </div>
+    </div>
+</div>

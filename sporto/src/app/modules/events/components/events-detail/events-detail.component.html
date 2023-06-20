@@ -1,0 +1,74 @@
+<div class="event-details-container">
+
+    <!-- <div class="back-btn" (click)="goBack()">
+        <mat-icon>keyboard_backspace</mat-icon>
+    </div> -->
+    <div class="event-box" *ngFor="let event of currentEventsData">
+        <div class="img">
+            <img [src]="event.imgUrl" [alt]="event.name">
+        </div>
+        <div class="desc ">
+            <div class="wrapper p-16">
+
+                <h4>About the event</h4>
+
+                <p [innerHtml]="event.desc" style="font-size: 12px; padding: 8px;"></p>
+
+            </div>
+            <div class="divider"></div>
+            <div class="wrapper p-16">
+                <h4>Event Details</h4>
+                <div class="event-details d-flex">
+
+                    <div class="event-detail-item schedule">
+                        <mat-icon>event_available</mat-icon>
+                        <div class="event-detail-heading">event schedule</div>
+                        <div class="event-detail-desc">{{event.date}}</div>
+                    </div>
+
+                    <div class="event-detail-item location">
+
+                        <mat-icon>location_on</mat-icon>
+                        <div class="event-detail-heading">event schedule</div>
+                        <div class="event-detail-desc">{{event.venue}}</div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="wrapper p-16">
+
+                <h4>Prize Strcuture</h4>
+                <div class="prize-box">
+                    <div class="fee" *ngFor="let prize of event.prizes;let i = index">
+                        <div class="d-flex jc-sb">
+
+                            <!-- Fees checkbox  -->
+                            <div>
+
+                                <label>{{prize.name}}</label><br>
+                            </div>
+
+                            <!-- Fees  -->
+                            <div>
+                                ₹ {{prize.prize}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Book button  -->
+            <div class="wrapper p-16">
+                <button>Book Now</button>
+                <!-- <button>Proceed To payment</button> -->
+            </div>
+        </div>
+    </div>
+
+</div>

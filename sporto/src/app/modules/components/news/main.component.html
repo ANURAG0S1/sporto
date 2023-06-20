@@ -1,0 +1,33 @@
+<div class="news-container">
+    <div class="feed m-t-16 f-w-600 p-l-16 d-flex jc-sb p-r-16 p-b-8">
+        <div class="heading">
+            Trending
+        </div>
+        <div class="select">
+            <select name="sport" id="sport" (change)="selectSport($event)" >
+                <option value="cricket">Cricket</option>
+                <option value="tennis">tennis</option>
+                <option value="football">Football</option>
+                <option value="badminton">Badminton</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="live-data-availaible" *ngIf="!loading">
+        <div class="list-item " *ngFor="let feedItem of liveData">
+            <div class="divider"></div>
+            <div class="feeditem p-8" key={feedItem.guid}>
+                <span class="title">{{feedItem.title}}</span>
+                <br>
+                <span class="summary">{{feedItem.summary}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="live-data-not-availaible" *ngIf="loading">
+        <div class="loading">Loading data</div>
+    </div>
+
+
+
+</div>

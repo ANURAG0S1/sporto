@@ -1,0 +1,78 @@
+<div class="academy-details-container bg-white">
+
+    <div class="back-btn" (click)="goBack()">
+        <mat-icon>keyboard_backspace</mat-icon>
+    </div>
+    <div class="academy-box" *ngFor="let academy of currentAcadData">
+        <div class="img">
+            <img [src]="academy.imgUrl" [alt]="academy.name">
+        </div>
+        <div class="desc ">
+            <div class="wrapper p-16">
+
+                <h4>About the academy</h4>
+
+                <p [innerHtml]="academy.desc" style="font-size: 12px; padding: 8px;"></p>
+
+            </div>
+            <div class="divider"></div>
+            <div class="wrapper p-16">
+                <h4>Event Details</h4>
+                <div class="event-details d-flex">
+
+                    <div class="event-detail-item schedule">
+                        <mat-icon>event_available</mat-icon>
+                        <div class="event-detail-heading">Academy schedule</div>
+                        <div class="event-detail-desc">{{academy.details.schedule}}</div>
+                    </div>
+
+                    <div class="event-detail-item location">
+                        <a [href]="academy.details.destination.locationUrl">
+                            <mat-icon>location_on</mat-icon>
+                            <div class="event-detail-heading">Academy Location</div>
+                            <div class="event-detail-desc">{{academy.details.destination.name}}</div>
+                        </a>
+                    </div>
+
+                    <div class=" event-detail-item contact">
+                        <a href="tel:{{academy.details.contact}}">
+                            <mat-icon>phone</mat-icon>
+                            <div class="event-detail-heading">Contact number</div>
+                            <div class="event-detail-desc">{{academy.details.contact}}</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="wrapper p-16">
+
+                <h4>Fee Strcuture</h4>
+                <div class="fees-box">
+                    <div class="fee" *ngFor="let fee of academy.fee;let i = index">
+                        <div class="d-flex jc-sb">
+
+                            <!-- Fees checkbox  -->
+                            <div>
+                                <input type="radio" [id]="'html'+i" name="fees" [value]="fee.fees" [title]="i">
+                                <label [for]="'html'+i">{{fee.type}}</label><br>
+                            </div>
+
+                             <!-- Fees  -->
+                            <div>
+                                ₹ {{fee.fees}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+        <!-- Book button  -->
+            <div class="wrapper p-16">
+                <button>Book Now</button>
+                <!-- <button>Proceed To payment</button> -->
+            </div>
+        </div>
+    </div>
+</div>

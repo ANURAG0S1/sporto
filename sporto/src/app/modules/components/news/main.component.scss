@@ -1,0 +1,31 @@
+.news-container {
+ 
+    .feed{
+        .select{
+            select{
+                border: 0px ;
+                outline: none;
+            }
+        }
+    }
+
+    .feeditem {
+        padding: 8px;
+        margin: 8px 4px;
+      .title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .summary {
+        font-weight: 100;
+        font-size: 12px;
+      }
+    
+  }
+
+  .live-data-not-availaible{
+    height: 60vh;
+    width: 100%;
+    display: flex;align-items: center;justify-content: center;
+  }
+}

@@ -1,0 +1,37 @@
+.matches {
+    display: flex;
+    margin-top: 12px;
+    overflow-x: scroll;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+
+}
+
+.team .name {
+    font-weight: 500;
+}
+
+.team img {
+    margin-right: 4px;
+    border-radius: 6px;
+}
+
+.team .left {
+    display: flex;
+}
+
+.over {
+    margin-left: 6px;
+    width: 30px;
+    color: gray;
+    font-size: 14px;
+}
+
+.status {
+    padding: 6px 4px 0px 4px;
+    font-size: 12px;
+}

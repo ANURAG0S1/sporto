@@ -10,9 +10,15 @@ import { UniversalDeviceDetectorService } from './_shared/providers/device-detec
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToasterAlertComponent } from './modules/components/toaster-alert/toaster-alert.component';
+import { SelectSportComponent } from './modules/select-sport/select-sport.component';
+
+import { FooterService } from './_shared/providers/footer/footer.service';
+import { TrendingComponent } from './modules/components/trending/trending.component';
+import { MainComponent } from './modules/components/news/main.component';
+
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HeaderComponent],
+  declarations: [AppComponent, FooterComponent, HeaderComponent, SelectSportComponent, TrendingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,9 +33,10 @@ import { ToasterAlertComponent } from './modules/components/toaster-alert/toaste
       autoDismiss: true,
       toastComponent: ToasterAlertComponent,
     }),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
   ],
-  providers: [UniversalDeviceDetectorService],
+  providers: [UniversalDeviceDetectorService,FooterService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

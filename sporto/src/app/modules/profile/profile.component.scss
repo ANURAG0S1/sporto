@@ -9,6 +9,12 @@ top: 0px;
     padding: 40px 24px;
 }
 
+.logo{
+    height: 10vh;
+margin-top: 8vh;
+    width: 100%;
+display: flex;align-items: center;justify-content: center;
+}
 
 .input-box {
     height: 54px;
@@ -21,7 +27,7 @@ top: 0px;
     padding: 16px;
 }
 
-#mobile {
+#username,#password,#name {
     background: #f4f4f4;
     border: 0px;
     padding: 0px 20px;
@@ -36,6 +42,13 @@ top: 0px;
     position: absolute;
     bottom: 40px;
     right: 24px;
+    width: 90vw;
+    font-size: 12px;
+    .login{
+        a{
+            color:#ff4b00
+        }
+    }
 }
 
 .social-login .divider {
